@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: , // 👈 Menggunakan './' agar path otomatis menyesuaikan di GitHub Pages tanpa perlu tulis nama repo
+      // 🟢 Hapus baris base sebelumnya. Vercel akan otomatis mengatur path-nya.
       server: {
         port: 3000,
         host: '0.0.0.0',
